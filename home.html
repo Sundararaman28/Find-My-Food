@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMyFood Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FindMyFood</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner" style="background: url('images/bg-home.png') no-repeat center center/cover;">
+            <div class="button-container">
+              <button id="makeMyFoodBtn" class="btn">MakeMyFood</button>
+              <button id="mapMyFoodBtn" class="btn">MapMyFood</button>
+            </div>
+        </div>
+        <div class="subscription">
+            <p>What to Partner with us? Leave your email and let’s form a bond...</p>
+            <form>
+                <input type="email" placeholder="example@findmyfood.com" required>
+                <button type="submit" class="btn connect">Connect</button>
+            </form>
+        </div>
+    </main>
+    <script>
+      document.getElementById("makeMyFoodBtn").addEventListener("click", function(event) {
+        event.preventDefault();
+        console.log("helo");
+        window.location.href = "login.html";  // Replace with the actual URL for MakeMyFood page
+      });
+      
+      document.getElementById("mapMyFoodBtn").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "registration.html";  // Replace with the actual URL for MapMyFood page
+      });
+    </script>
+</body>
+</html>

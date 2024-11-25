@@ -1,0 +1,57 @@
+body {
+  font-family: 'Kurale', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent the body from scrolling */
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Kurale', sans-serif;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 600px;
+  padding: 5px 30px 10px 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  max-height: calc(100vh - 40px); /* Ensure the content div doesn't exceed the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: decimal;
+}
+
+ol li {
+  margin-bottom: 10px;
+  color: #555;
+}

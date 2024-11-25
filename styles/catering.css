@@ -1,0 +1,158 @@
+body {
+  font-family: 'Kurale', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  background: #fff;
+  padding: 10px 10px 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  
+  align-items: center;
+}
+
+.header .logo {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.back-link {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  z-index: 1001;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  font-family: 'kurale';
+  font-size: 28px;
+  margin: 20px 0;
+  position: fixed;
+  top: 60px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 280px; /* Adjusted for header and title spacing */
+  height: calc(100vh - 140px); /* Adjust for page title height */
+  overflow: hidden; /* To hide overflow within container */
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Enable scrolling only within content */
+  flex-grow: 1;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+h1{
+  margin: 0 0 10px 0;
+}
+.end-of-orders {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.order-list {
+  width: 100%;
+}
+
+.order {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.order h2 {
+  margin-top: 0;
+}
+
+.order p {
+  text-align: justify;
+}
+
+.order-paragraph .more-text {
+  display: none;
+}
+
+.price {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.price input {
+  border: none;
+  background: none;
+  font-size: 18px;
+  margin-left: 10px;
+  font-family: 'Kurale', sans-serif;
+}
+
+.quoteBidButton {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.quoteBidButton:hover {
+  background-color: darkred;
+}

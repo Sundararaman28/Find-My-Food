@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.logo1{
+  font-family: Kaushan Script;
+  margin: auto;
+  padding: 10px;
+  font-size: 25px;
+}
+.logo,.back {
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 20px;
+  color: black;
+}
+.logo a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+h3{
+  font-family: Kaushan Script;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.login-box h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.textbox {
+  margin-bottom: 15px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #e1e1e1;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00c400;
+  color: white;
+  font-size: 16px;
+  font-family:  Kaushan Script;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #009e00;
+}
+
+p {
+  color: #333;
+}
+
+p a {
+  color: #00c400;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+      width: 90%;
+  }
+}

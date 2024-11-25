@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+</head>
+<body style="background: url('images/payment-page.png') no-repeat center center/cover;">
+    <div class="secure-msg">
+        <span class="lock-icon">🔒</span> Your Payments are secure
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>Payment Details</h1>
+            <form>
+                <div class="form-group">
+                    <label for="order_id">Order_id -</label>
+                    <input type="text" id="order_id" placeholder="12345678">
+                </div>
+                <div class="form-group">
+                    <label for="food_id">Food_id -</label>
+                    <input type="text" id="food_id" placeholder="itemid007">
+                </div>
+                <div class="form-group">
+                    <label for="payment_id">Payment_id -</label>
+                    <input type="text" id="payment_id" placeholder="1234567abc">
+                </div>
+                <div class="form-group">
+                    <label for="vendor_name">Vendor Name -</label>
+                    <input type="text" id="vendor_name" placeholder="K Suresh">
+                </div>
+                <div class="form-group">
+                    <label for="vendor_contact">Vendor Contact Number -</label>
+                    <input type="text" id="vendor_contact" placeholder="1234567890">
+                </div>
+                <div class="form-group">
+                    <label for="vendor_address">Vendor Address -</label>
+                    <input type="text" id="vendor_address" placeholder="Rajendra Nagar, New Delhi.">
+                </div>
+                <div class="form-group">
+                    <label for="payment_mode">Choose Payment Mode:</label>
+                    <div class="payment-options">
+                        <label><input type="radio" name="payment_mode" value="cash"> <img src="images/cash.png" alt="Cash" class="payment-icon"> Cash</label>
+                        <label><input type="radio" name="payment_mode" value="upi"> <img src="images/upi.png" alt="UPI" class="payment-icon"> UPI</label>
+                        <label><input type="radio" name="payment_mode" value="card"> <img src="images/card.png" alt="Card" class="payment-icon"> Card</label>
+                    </div>
+                </div>
+                <div class="button-group">
+                  <button type="button" id="cancelButton">Cancel Payment</button>
+                    <button type="button" id="payButton">Do Payment</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('payButton').addEventListener('click', function() {
+            alert('Payment Successful!');
+        });
+        document.getElementById('cancelButton').addEventListener('click', function() {
+            alert('Payment Cancelled!');
+        });
+    </script>
+</body>
+</html>
